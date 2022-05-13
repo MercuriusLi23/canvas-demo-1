@@ -44,6 +44,7 @@
       } else {
         canvas.onmousedown = (e) => {
           painting = true;
+          drawLine(last[0], last[1], e.clientX, e.clientY);
           last = [e.clientX, e.clientY];
           console.log(last);
         };
